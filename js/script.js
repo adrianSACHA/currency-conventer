@@ -14,7 +14,7 @@
     }
   };
 
-  const updateResultText = (ammount, result, currency) => {
+  const updateResultText = (result) => {
     const resultElement = document.querySelector(".js-result");
     resultElement.innerText = `${result.toFixed(2)}`;
   };
