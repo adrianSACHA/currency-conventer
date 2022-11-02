@@ -14,9 +14,9 @@
     }
   };
 
-  const updateResultText = (result) => {
+  const updateResultText = (ammount, result, currency) => {
     const resultElement = document.querySelector(".js-result");
-    resultElement.innerText = `${result.toFixed(2)}`;
+    resultElement.innerText = `${ammount.toFixed(2)} PLN = ${result.toFixed(2)} ${currency}`;
   };
 
   const onFormSubmit = (event) => {
